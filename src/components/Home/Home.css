@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+}
+
+.hero {
+    height: 91vh;
+    display: flex;
+    overflow: hidden;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-left h2 {
+    color: #090909;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.3; /* Adjusted line height for better spacing */
+}
+
+.hand-hand-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Adjusted gap for better spacing */
+}
+
+.hand-hand-icon p {
+    font-family: 'cursive', sans-serif; /* Change font family to a cursive font */
+    margin: 0;
+}
+
+.hand-hand-icon p:first-child {
+    font-size: 25px; /* Font size for "new" */
+    font-family: Dhurjati;
+}
+
+.hand-hand-icon p:nth-child(2) {
+    font-size: 80px; /* Font size for "Collections" */
+    font-family: Chilanka;
+}
+
+.hand-hand-icon p:last-child {
+    font-size: 35px; /* Font size for "For Everyone" */
+    font-family: Chilanka;
+}
+
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 20px;
+    background: #ff4141;
+}
+
+.hero-latest-btn button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    background: #ff4141;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: Chilanka;
+}
+
+
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.hero-right img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}

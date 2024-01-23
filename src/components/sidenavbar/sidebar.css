@@ -1,0 +1,17 @@
+.flex-container {
+  display: flex;
+}
+
+.side-navbar {
+  width: 200px;
+  margin: 0%;
+  padding: 20px;
+  /* background-color: #f5efef; */
+  margin-top: 10px;
+  box-shadow: 0 5px 8px -2px rgb(226, 222, 222);
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}

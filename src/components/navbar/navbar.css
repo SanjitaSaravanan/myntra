@@ -1,0 +1,104 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 0 5px 8px -2px rgb(241, 240, 240);
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-logo p{
+    color: #171717;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.logo-image {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-left: -20px; /* Add margin for spacing */
+}
+.cart-image {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-left: 5px; /* Add margin for spacing */
+}
+  .nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    color: #626262;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: -100px;
+  }
+  .nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    cursor: pointer;
+  }
+  .nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background:#ff4141 ;
+  }
+  .nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .nav-login-cart button{
+    width: 85px;
+    height: 38px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #151515;
+    font-size: 15px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+  }
+  .nav-login-cart button:active{
+    background: #f3f3f3;
+  }
+  .nav-cart-count{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+    margin-left: -17px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: white;
+  }
+  .searchbar {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
+  .searchbar input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px; /* Adjust the margin as needed */
+  }
+  
+  .searchbar .search-icon {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    cursor: pointer;
+  }

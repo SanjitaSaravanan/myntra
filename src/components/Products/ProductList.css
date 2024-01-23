@@ -1,0 +1,149 @@
+/* Add this CSS to style your Products component */
+
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.pagination-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-button {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin: 0 4px;
+  transition: background-color 0.3s;
+}
+
+.pagination-button:hover {
+  background-color: #0056b3;
+}
+
+.pagination-button.prev,
+.pagination-button.next {
+  background-color: #ddd;
+  color: #333;
+}
+
+.pagination-button.prev:hover,
+.pagination-button.next:hover {
+  background-color: #ccc;
+}
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+/* products.css */
+
+/* Add some styling to the category dropdown */
+.select-category {
+width: 200px;
+padding: 8px;
+border: 1px solid #ced4da;
+border-radius: 4px;
+font-size: 14px;
+outline: none;
+}
+
+/* Style the pagination buttons */
+.pagination-container {
+margin-top: 20px;
+}
+
+
+.pagination-button {
+  background-color: #6484a5;
+  color: #fff;
+  border: 1px solid #547699;
+  padding: 8px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+}
+
+.pagination-button:hover {
+  background-color: #0056b3;
+}
+
+.pagination-button.active {
+  background-color: #00cc00;  /* Set green background for active button */
+  color: #fff;
+  border: 1px solid #00cc00;  /* Optional: You can adjust the border color if needed */
+  border-radius: 4px;
+  cursor: default;
+  box-shadow: 0 0 5px rgba(0, 204, 0, 0.3); /* Add box shadow for active button */
+}
+
+/* Style the table */
+.table {
+margin-top: 20px;
+}
+
+/* Style the table header */
+.table thead th {
+background-color: #343a40;
+color: #fff;
+}
+
+/* Style the table rows */
+.table tbody tr:nth-child(even) {
+background-color: #f8f9fa;
+}
+
+.my-3 {
+display: flex;
+align-items: center;
+}
+
+.my-3 label {
+margin-bottom: 0;
+margin-right: 10px;
+}
+
+.form-control {
+width: 200px;
+}
+.home-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
