@@ -15,7 +15,7 @@ const CategoryProducts = () => {
 
   useEffect(() => {
     // Fetch products based on the category and update state
-    fetch(`http://localhost:4000/products/category/${category}`)
+    fetch(`http://192.168.1.54:4000/products/category/${category}`)
       .then((response) => response.json())
       .then((data) => {
         console.log('Data received:', data);

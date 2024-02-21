@@ -1,14 +1,29 @@
-FROM node
+# FROM nginx
+
+# WORKDIR /app
+
+# COPY . .
+
+# RUN npm install
+
+# EXPOSE 8000
+
+# CMD ["npm","start"]
+
+FROM node:alpine as ui-builder
 
 WORKDIR /app
 
-COPY package.json .
+COPY . .
 
 RUN npm install
 
-COPY . .
+# ARG REACT_APP_HOST_IP_ADDRESS
 
-EXPOSE 3000
+# ENV REACT_APP_END_POINT $REACT_APP_HOST_IP_ADDRESS
 
-CMD ["node","index.js"]
+RUN npm run build
 
+FROM nginx
+COPY --from=ui-builder /app/build /usr/share/nginx/html
+CMD ["nginx", "-g", "daemon off;"]

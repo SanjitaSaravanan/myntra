@@ -10,7 +10,7 @@ const SolarSearch = () => {
             try {
                 console.log("yes entrn")
                 console.log("passing searechterm ",searchTerm)
-                let response = await fetch(`http://localhost:4000/search?q=${encodeURIComponent(searchTerm)}`)
+                let response = await fetch(`http://192.168.1.54:4000/search?q=${encodeURIComponent(searchTerm)}`)
                 response = await response.json()
                 console.log(response)
                 setdata(response)

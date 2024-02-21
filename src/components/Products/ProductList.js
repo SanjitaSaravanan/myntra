@@ -19,8 +19,8 @@ const ProductList = () => {
 
   useEffect(() => {
     // Fetch categories from your server API
-    // Example API endpoint: http://localhost:5000/api/categories
-    fetch("http://localhost:4000/products", {
+    // Example API endpoint: http://0.0.0.0:5000/api/categories
+    fetch("http://192.168.1.54:4000/products", {
       method: 'GET',
       headers: {
         Accept: 'application/json',

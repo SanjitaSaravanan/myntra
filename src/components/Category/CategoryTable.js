@@ -6,7 +6,7 @@ const CategoryTable = () => {
   const [category, setCategory] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4000/category")
+    fetch("http://192.168.1.54:4000/category")
       .then((response) => response.json())
       .then((data) => setCategory(data))
       .catch((error) => console.log(error));

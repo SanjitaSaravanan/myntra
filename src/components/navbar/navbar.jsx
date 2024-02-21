@@ -1,7 +1,6 @@
 
 import './navbar.css'
 import logo from '../assets/shopcart.png'
-import cart_icon from '../assets/cart.png'
 import search_icon from '../assets/search.png'
 import React, { useState, useEffect } from "react";
 import { Navigate, useNavigate } from 'react-router-dom';
@@ -14,7 +13,7 @@ const Navbar = () => {
     const handleSearch = async() => {
       // Implement your search logic here, e.g., navigate to search results page
       navigate(`/SolarSearch/${searchQuery}`);
-      const response = await fetch(`http://localhost:4000/search?q=${encodeURIComponent(searchQuery)}` );
+      const response = await fetch(`http://192.168.1.54:4000/search?q=${encodeURIComponent(searchQuery)}` );
             const data = await response.json();
            // setProducts(data);
             console.log('Search Results:', data);
